@@ -23,5 +23,68 @@ Error generating stack: `+l.message+`
 </script>
   <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host){a.target="_blank";a.rel="noopener noreferrer";}}catch(e){}}function s(){document.querySelectorAll("a[href]").forEach(m);}if(document.readyState!=="loading"){s();}else{document.addEventListener("DOMContentLoaded",s);}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a){m(a);}},true);})();</script>
   
+<!-- Tilastosivu-mainososio (lisätty sivun loppuun; asettuu Yhteys-osion eteen) -->
+<style>
+#tsp{max-width:1080px;margin:0 auto;padding:48px 20px 56px;border-top:1px solid rgba(16,42,26,.1);color:#0f2818;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+@media(min-width:768px){#tsp{padding:64px 32px 72px}}
+#tsp .tsp-lab{font-size:11px;font-weight:900;letter-spacing:.16em;opacity:.4}
+#tsp h2{margin:12px 0 0;font-size:26px;font-weight:900;line-height:.98;letter-spacing:-.03em;max-width:760px}
+@media(min-width:768px){#tsp h2{font-size:36px}}
+#tsp .tsp-lead{margin:16px 0 0;max-width:640px;font-size:15px;line-height:1.55;opacity:.8}
+#tsp .tsp-shot{display:block;margin-top:28px;border-radius:20px;overflow:hidden;background:#070708;border:1px solid rgba(16,42,26,.1);box-shadow:0 12px 36px rgba(15,40,24,.10);text-decoration:none}
+#tsp .tsp-shot img{display:block;width:100%;height:auto}
+#tsp .tsp-cap{display:flex;justify-content:space-between;gap:12px;padding:10px 16px;background:#0f2818;color:#f5f2eb;font-size:12px;font-weight:700}
+#tsp .tsp-cap span:last-child{opacity:.75;font-weight:600}
+#tsp .tsp-grid{margin-top:20px;display:grid;gap:16px}
+@media(min-width:768px){#tsp .tsp-grid{grid-template-columns:repeat(3,1fr)}}
+#tsp .tsp-card{border-radius:20px;background:#fff;border:1px solid rgba(16,42,26,.1);padding:24px}
+#tsp .tsp-card h3{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em}
+#tsp .tsp-card p{margin:10px 0 0;font-size:13.5px;line-height:1.6;opacity:.7}
+#tsp .tsp-note{margin-top:20px;border-radius:14px;background:#fff;border:1px solid rgba(16,42,26,.1);border-left:3px solid #0f2818;padding:12px 14px;font-size:14px;font-weight:700;line-height:1.4;max-width:640px}
+#tsp .tsp-cta{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+#tsp .tsp-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:999px;font-size:14px;font-weight:800;text-decoration:none;letter-spacing:-.01em}
+#tsp .tsp-btn.p{background:#0f2818;color:#f5f2eb}
+#tsp .tsp-btn.s{background:#fff;color:#0f2818;border:1px solid rgba(16,42,26,.2)}
+#tsp .tsp-btn:focus-visible{outline:3px solid #6aa84f;outline-offset:2px}
+</style>
+<template id="tsp-tpl">
+<section id="tsp" aria-labelledby="tsp-otsikko">
+  <div class="tsp-lab">UUTTA · TILASTOSIVU RADALLE</div>
+  <h2 id="tsp-otsikko">Kiinnostaisiko seuraanne tai kuntaanne vastaava palvelu?</h2>
+  <p class="tsp-lead">Teemme frisbeegolfradalle oman tilastosivun, joka päivittyy itsestään – samanlaisen kuin Luoma-ahon radalla. Pelaajat näkevät tulokset ja radan tilastot, ja radan ylläpitäjä saa tietoa radan käytöstä.</p>
+  <a class="tsp-shot" href="https://luomaahonfrisbeegolfrata-gif.github.io/luoma-aho-stats/" target="_blank" rel="noopener" aria-label="Avaa esimerkkisivu: Luoma-ahon Frisbeegolfradan tilastot">
+    <img src="https://luomaahonfrisbeegolfrata-gif.github.io/luoma-aho-stats/data/vaylatilasto.png" alt="Esimerkki: Luoma-ahon radan väylätilasto, joka päivittyy automaattisesti" loading="lazy" width="1880" height="500">
+    <div class="tsp-cap"><span>Esimerkki: Luoma-ahon Frisbeegolfrata – väylätilasto</span><span>Päivittyy automaattisesti →</span></div>
+  </a>
+  <div class="tsp-grid">
+    <div class="tsp-card"><h3>Päivittyy itsestään</h3><p>Metrix-tulokset, kierrosmäärät, TOP 10 -listat, tulevat kilpailut, live-tulokset ja sarjapisteet ilman käsityötä.</p></div>
+    <div class="tsp-card"><h3>Väylätilasto</h3><p>Väylien keskiarvot, vaikeusjärjestys, luokitus ja tulosjakaumat. Tilastokuvan voi upottaa myös seuran tai kunnan omille sivuille.</p></div>
+    <div class="tsp-card"><h3>Radan omalla ilmeellä</h3><p>Logot, linkit, tiedotteet, sää, vieraskirja ja palkintolaskuri. Toimii omana sivunaan tai liitettynä nykyiseen nettisivuun.</p></div>
+  </div>
+  <div class="tsp-note">Te lähetätte radan tiedot ja logot – me hoidamme sivun pystyyn ja pidämme sen ajan tasalla.</div>
+  <div class="tsp-cta">
+    <a class="tsp-btn p" href="https://luomaahonfrisbeegolfrata-gif.github.io/luoma-aho-stats/" target="_blank" rel="noopener">Katso esimerkkisivu →</a>
+    <a class="tsp-btn s" href="mailto:toni.luoma-aho@protonmail.ch?subject=Tilastosivu%20radalle&amp;body=Hei!%0A%0ARata%3A%20%0APaikkakunta%3A%20%0ASeura%20%2F%20kunta%3A%20%0AYhteyshenkil%C3%B6%3A%20%0A">Kysy tarjousta sähköpostilla</a>
+    <a class="tsp-btn s" href="#yhteys">Muut yhteystiedot</a>
+  </div>
+</section>
+</template>
+<script>
+(function(){
+  // Lisää osio React-sovelluksen Yhteys-osion eteen; palauttaa sen, jos sovellus piirtää sivun uudelleen.
+  function place(){
+    var y=document.getElementById('yhteys');
+    if(!y||document.getElementById('tsp'))return;
+    var t=document.getElementById('tsp-tpl');
+    y.parentNode.insertBefore(t.content.cloneNode(true),y);
+  }
+  var root=document.getElementById('root')||document.body;
+  new MutationObserver(place).observe(root,{childList:true,subtree:true});
+  document.addEventListener('DOMContentLoaded',place);
+  window.addEventListener('load',place);
+  place();
+})();
+</script>
+
 </body>
 </html>
