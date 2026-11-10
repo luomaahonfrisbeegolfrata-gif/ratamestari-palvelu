@@ -36,7 +36,9 @@ Error generating stack: `+l.message+`
 #tsp .tsp-cap{display:flex;justify-content:space-between;gap:12px;padding:10px 16px;background:#0f2818;color:#f5f2eb;font-size:12px;font-weight:700}
 #tsp .tsp-cap span:last-child{opacity:.75;font-weight:600}
 #tsp .tsp-grid{margin-top:20px;display:grid;gap:16px}
-@media(min-width:768px){#tsp .tsp-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:768px){#tsp .tsp-grid{grid-template-columns:repeat(3,1fr)}#tsp .tsp-low{grid-column:2;grid-row:2}}
+#tsp .tsp-low{padding:12px 24px}
+#tsp .tsp-low h3{font-size:15px}
 #tsp .tsp-card{border-radius:20px;background:#fff;border:1px solid rgba(16,42,26,.1);padding:24px}
 #tsp .tsp-card h3{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em}
 #tsp .tsp-card p{margin:10px 0 0;font-size:13.5px;line-height:1.6;opacity:.7}
@@ -51,19 +53,20 @@ Error generating stack: `+l.message+`
 <section id="tsp" aria-labelledby="tsp-otsikko">
   <div class="tsp-lab">UUTTA · TILASTOSIVU RADALLE</div>
   <h2 id="tsp-otsikko">Kiinnostaisiko seuraanne tai kuntaanne vastaava palvelu?</h2>
-  <p class="tsp-lead">Teemme frisbeegolfradalle oman tilastosivun, joka päivittyy itsestään – samanlaisen kuin Luoma-ahon radalla. Pelaajat näkevät tulokset ja radan tilastot, ja radan ylläpitäjä saa tietoa radan käytöstä.</p>
-  <a class="tsp-shot" href="https://luomaahonfrisbeegolfrata-gif.github.io/luoma-aho-stats/" target="_blank" rel="noopener" aria-label="Avaa esimerkkisivu: Luoma-ahon Frisbeegolfradan tilastot">
-    <img src="https://luomaahonfrisbeegolfrata-gif.github.io/luoma-aho-stats/data/vaylatilasto.png" alt="Esimerkki: Luoma-ahon radan väylätilasto, joka päivittyy automaattisesti" loading="lazy" width="1880" height="500">
+  <p class="tsp-lead">Teen frisbeegolfradalle oman tilastosivun, joka päivittyy itsestään – samanlaisen kuin Luoma-ahon radalla. Pelaajat näkevät tulokset ja radan tilastot, ja radan ylläpitäjä saa tietoa radan käytöstä.</p>
+  <a class="tsp-shot" href="https://tilastosivu.luomaahonfrisbeegolfrata.workers.dev/" target="_blank" rel="noopener" aria-label="Avaa esimerkkisivu: Luoma-ahon Frisbeegolfradan tilastot">
+    <img src="https://tilastosivu.luomaahonfrisbeegolfrata.workers.dev/data/vaylatilasto.png" alt="Esimerkki: Luoma-ahon radan väylätilasto, joka päivittyy automaattisesti" loading="lazy" width="1880" height="500">
     <div class="tsp-cap"><span>Esimerkki: Luoma-ahon Frisbeegolfrata – väylätilasto</span><span>Päivittyy automaattisesti →</span></div>
   </a>
   <div class="tsp-grid">
     <div class="tsp-card"><h3>Päivittyy itsestään</h3><p>Metrix-tulokset, kierrosmäärät, TOP 10 -listat, tulevat kilpailut, live-tulokset ja sarjapisteet ilman käsityötä.</p></div>
     <div class="tsp-card"><h3>Väylätilasto</h3><p>Väylien keskiarvot, vaikeusjärjestys, luokitus ja tulosjakaumat. Tilastokuvan voi upottaa myös seuran tai kunnan omille sivuille.</p></div>
+    <div class="tsp-card tsp-low"><h3>Mahdollisesti koko sivu sisältäen</h3></div>
     <div class="tsp-card"><h3>Radan omalla ilmeellä</h3><p>Logot, linkit, tiedotteet, sää, vieraskirja ja palkintolaskuri. Toimii omana sivunaan tai liitettynä nykyiseen nettisivuun.</p></div>
   </div>
-  <div class="tsp-note">Te lähetätte radan tiedot ja logot – me hoidamme sivun pystyyn ja pidämme sen ajan tasalla.</div>
+  <div class="tsp-note">Te lähetätte radan tiedot ja logot – minä hoidan sivun pystyyn ja pidän sen ajan tasalla.</div>
   <div class="tsp-cta">
-    <a class="tsp-btn p" href="https://luomaahonfrisbeegolfrata-gif.github.io/luoma-aho-stats/" target="_blank" rel="noopener">Katso esimerkkisivu →</a>
+    <a class="tsp-btn p" href="https://tilastosivu.luomaahonfrisbeegolfrata.workers.dev/" target="_blank" rel="noopener">Katso esimerkkisivu →</a>
     <a class="tsp-btn s" href="mailto:toni.luoma-aho@protonmail.ch?subject=Tilastosivu%20radalle&amp;body=Hei!%0A%0ARata%3A%20%0APaikkakunta%3A%20%0ASeura%20%2F%20kunta%3A%20%0AYhteyshenkil%C3%B6%3A%20%0A">Kysy tarjousta sähköpostilla</a>
     <a class="tsp-btn s" href="#yhteys">Muut yhteystiedot</a>
   </div>
